@@ -22,13 +22,37 @@
   <body>
     <!--Шапка страницы-->
     <header class="header">
-      <div class="container header-nav">
+      <div class="container">
         <nav class="header-nav">
           <a href="./index.html" class="logo" lang="en">
-            Web<span class="logo--black">Studio</span></a>
-          <ul class="nav-list">
+            Web<span class="logo--black">Studio</span></a
+          >
+          <button
+            class="mob-menu is-open"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="Меню">
+              <use
+                class="mob-menu__open"
+                href="./images/icons.svg#mob-menu"
+              ></use>
+              <use
+                class="mob-menu__close"
+                href="./images/icons.svg#mob-close"
+              ></use>
+            </svg>
+          </button>
+
+          <ul class="nav-list is-open" id="menu-container" data-menu>
             <li class="nav-list__item">
-              <a class="nav-list__link nav-list__link--current" href="./index.html">Студия</a>
+              <a
+                class="nav-list__link nav-list__link--current"
+                href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="nav-list__item">
               <a class="nav-list__link" href="./portfolio.html">Портфолио</a>
@@ -59,19 +83,18 @@
       </div>
     </header>
 
-
-    <!-------------------------MAIN----------------------->
+    <!-- -----------------------MAIN------------------->
     <main>
-      <!--------------------------------Герой--------------------------------->
+      <!-- ------------------------------Герой--------------------------------- -->
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-button" type="button"  data-modal-open>
+          <button class="hero-button" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
       </section>
-      <!------------------------------------Преимущества-------------------------->
+      <!------------------------------------Преимущества------------------------>
       <section class="section benefits">
         <div class="container">
           <h2 class="benefits__title visually-hidden">Наши преимущества</h2>
@@ -127,7 +150,7 @@
           </ul>
         </div>
       </section>
-      <!-----------------------------Чем мы занимаемся------------------------->
+      <!--------------------------Чем мы занимаемся----------------------->
       <section class="section activity">
         <div class="container">
           <h2 class="activity__title">Чем мы занимаемся</h2>
@@ -163,8 +186,7 @@
         </div>
       </section>
 
-
-      <!------------------------------Наша команда--------------------------->
+      <!--------------------------Наша команда------------------------->
       <section class="section team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
@@ -309,7 +331,7 @@
               />
               <div class="team__description">
                 <h3 class="team__subtitle">Михаил Ермаков</h3>
-                <p>Product Designer</p>
+                <p>UI Designer</p>
                 <ul class="social">
                   <li class="social__item">
                     <a class="social__link" href="">
@@ -348,7 +370,7 @@
           </ul>
         </div>
       </section>
-      <!------------------- НАШИ КЛИЕНТЬ1 ----------------------->
+      <!---------------- НАШИ КЛИЕНТЬ1 -------------------->
       <section class="clients section">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
@@ -404,7 +426,7 @@
         </div>
       </section>
     </main>
-    <!--------------------------Футер------------------------------->
+    <!-----------------------Футер---------------------------->
     <footer class="footer">
       <div class="container">
         <div class="footer__tumb">
@@ -415,25 +437,29 @@
             <address>
               <ul class="address-list">
                 <li class="address-list__item">
-                  <a class="address-list__link address-list__link--white"
+                  <a
+                    class="address-list__link address-list__link--white"
                     href="https://goo.gl/maps/9nFmkoWLw5My4v6r6"
                     target="_blank"
                     rel="noopener nofollow noreferrer"
-                    
                   >
                     г. Киев, пр-т Леси Украинки, 26</a
                   >
                 </li>
                 <li class="address-list__item">
-                  <a class="address-list__link" href="mailto:info@example.com">info@example.com</a>
+                  <a class="address-list__link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
                 </li>
                 <li class="address-list__item">
-                  <a class="address-list__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                  <a class="address-list__link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
           </div>
-          <!-- ------------FOOTER SOCIAL---------- -->
+          <!----------FOOTER SOCIAL--------->
           <div class="footer-social">
             <p class="footer-social__title">Присоединяйтесь</p>
             <ul class="footer-social__list">
@@ -495,8 +521,7 @@
       </div>
     </footer>
 
-
-    <!--------------------- MODAL WINDOW --------------------->
+    <!------------------ MODAL WINDOW ------------------
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-btn" data-modal-close>
@@ -556,6 +581,7 @@
 
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>

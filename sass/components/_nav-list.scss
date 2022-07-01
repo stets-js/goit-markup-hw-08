@@ -1,10 +1,18 @@
 .nav-list {
-    display: flex;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    
     padding-left: 0;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    margin-left: 93px;
+    // margin-left: 93px;
+    &.is-open {
+        display: block;
+    }
 }
 
 .nav-list__item {
@@ -20,8 +28,7 @@
     text-decoration: inherit;
     color: $black-title;
     &:hover,
-        
-        &:focus
+    &:focus
          
           {  color: $accent;}
         

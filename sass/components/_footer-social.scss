@@ -1,6 +1,11 @@
 .footer-social {
-    margin-top: 12px;
-    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+        // margin-top: 12px;
+    // margin-left: 70px;
     width: 206px;
 
 
@@ -8,7 +13,7 @@
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     text-transform: uppercase;
     color: $main-bg;
 }
@@ -18,7 +23,8 @@
     padding: 0;
     margin-top: 0;
     list-style: none;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
     align-items: center;
 }
 

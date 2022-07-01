@@ -1,5 +1,10 @@
 .subscribe {
-    margin-left: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+    // margin-left: 93px;
 
 
 &__title {
@@ -15,9 +20,10 @@
 }
 
 .subscribe-form__input {
-    width: 358px;
+    
+    min-width: 450px;
     height: 50px;
-    margin: 0;
+    margin-top: 20px;
     padding: 13px 16px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -34,8 +40,8 @@
 }
 
 .subscribe-form__btn {
-    display: inline-flex;
-    align-items: center;
+    display: flex;
+    text-align: center;
     justify-content: center;
     border: none;
     margin: 0;
@@ -49,9 +55,7 @@
     line-height: 1.87;
     letter-spacing: 0.06em;
     cursor: pointer;
-    width: 200px;
-    height: 50px;
-    margin-left: 12px;
+    // margin-left: 12px;
 }
 
 .subscribe-form__icon {
