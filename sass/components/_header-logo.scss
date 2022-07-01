@@ -1,0 +1,20 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: $secondary-font;
+    font-size: 26px;
+    line-height: 1.2;
+    color: $accent;
+}
+
+.logo--black {
+    color: $header-logo-clr;
+}

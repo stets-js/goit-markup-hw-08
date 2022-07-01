@@ -1,0 +1,26 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+}
+
+.footer__tumb {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__logo {
+    color: #ffffff;
+    text-decoration: inherit;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+
+&--accent {
+    color: $accent;
+}
+}

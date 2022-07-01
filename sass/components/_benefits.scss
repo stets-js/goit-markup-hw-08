@@ -1,0 +1,34 @@
+.tumb {
+    display: flex;
+    min-height: 120px;
+    margin-bottom: 30px;
+    background-color: $benefits-icon__tumb;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.benefits__subtitle {
+    color: $black-title;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.benefits__list {
+    display: flex;
+    padding-left: 0;
+    line-height: 1.71;
+}
+
+.benefits__item {
+    width: 270px;
+
+&:not(:first-child) {
+    margin-left: 30px;
+}
+}
