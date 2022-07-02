@@ -32,6 +32,10 @@ margin: 0;
 border: none;
 background-color: transparent;
 
+&:hover {
+    fill: $accent;
+}
+
 &__close{
     display: none;
 }
@@ -40,6 +44,7 @@ background-color: transparent;
 .is-open {
     .mob-menu__close {
     display: block;
+    fill: #212121;
     }
     .mob-menu__open {
         display: none;

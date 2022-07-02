@@ -27,22 +27,22 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: inherit;
     color: $black-title;
-    &:hover,
-    &:focus
+//     &:hover,
+//     &:focus
          
-          {  color: $accent;}
+//           {  color: $accent;}
         
         &--current {
     color: $accent;
-            &::after {
-                    position: absolute;
-                    content: "";
-                    display: block;
-                    bottom: -1px;
-                    width: 100%;
-                    height: 4px;
-                    border-radius: 4px;
-                    background-color: $accent;
-}
+//             &::after {
+//                     position: absolute;
+//                     content: "";
+//                     display: block;
+//                     bottom: -1px;
+//                     width: 100%;
+//                     height: 4px;
+//                     border-radius: 4px;
+//                     background-color: $accent;
+// }
         }
     }
