@@ -183,7 +183,7 @@ body {
 }
 
 .hero {
-  min-width: 480px;
+  min-width: 100%;
   min-height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -742,7 +742,7 @@ body {
 }
 
 .subscribe-form__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   margin-top: 20px;
   padding: 13px 16px;
