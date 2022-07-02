@@ -1,11 +1,12 @@
 .form {
-    width: 528px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
 }
 
 .form__title {
+    display: block;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -95,7 +96,7 @@
 }
 
 .form__field-checkbox {
-    padding-left: 14px;
+    // padding-left: 14px;
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -126,8 +127,10 @@
 .form__policy-label {
     display: flex;
     align-items: center;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
+    // font-size: 14px;
+    // line-height: 1.71;
     color: $main-text;
 }
 

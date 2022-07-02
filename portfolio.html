@@ -22,12 +22,31 @@
   <body>
     <!--Шапка страницы-->
     <header class="header">
-      <div class="container header-nav">
+      <div class="container">
         <nav class="header-nav">
           <a href="./index.html" class="logo" lang="en">
             Web<span class="logo--black">Studio</span></a
           >
-          <ul class="nav-list">
+          <button
+            class="mob-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="Меню">
+              <use
+                class="mob-menu__open"
+                href="./images/icons.svg#mob-menu"
+              ></use>
+              <use
+                class="mob-menu__close"
+                href="./images/icons.svg#mob-close"
+              ></use>
+            </svg>
+          </button>
+
+          <ul class="nav-list" id="menu-container" data-menu>
             <li class="nav-list__item">
               <a class="nav-list__link" href="./index.html">Студия</a>
             </li>
@@ -368,5 +387,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>
