@@ -1,5 +1,9 @@
 .btn-list {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+
+    
     margin-bottom: 50px;
 
 
@@ -9,8 +13,8 @@
 
 
 
-&:not(:first-child) {
-    margin-left: 8px;
+&:not(:last-child) {
+    margin-right: 8px;
 }
 }
 

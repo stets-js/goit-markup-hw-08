@@ -53,8 +53,11 @@ background-color: transparent;
     .mob-menu__close {
         display: block;
         position: absolute;
-       
         fill: #212121;
+
+        &:hover, &:focus {
+            fill: $accent;
+        }
     }
 
     .mob-menu__open {

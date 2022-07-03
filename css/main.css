@@ -129,6 +129,9 @@ body {
   position: absolute;
   fill: #212121;
 }
+.mob-menu.is-open .mob-menu__close:hover, .mob-menu.is-open .mob-menu__close:focus {
+  fill: #2196f3;
+}
 .mob-menu.is-open .mob-menu__open {
   display: none;
 }
@@ -287,7 +290,6 @@ body {
 }
 
 .hero {
-  min-height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -344,7 +346,6 @@ body {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-y: scroll;
 }
 
 .is-hidden {
@@ -903,15 +904,17 @@ body {
 }
 
 .btn-list {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
   margin-bottom: 50px;
 }
 .btn-list__item {
   list-style-type: none;
   display: inline;
 }
-.btn-list__item:not(:first-child) {
-  margin-left: 8px;
+.btn-list__item:not(:last-child) {
+  margin-right: 8px;
 }
 .btn-list__button {
   border-radius: 4px;
@@ -935,44 +938,35 @@ body {
 
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
-}
-.portfolio-list__item {
-  width: calc((100% - 30px) / 3);
+  flex-direction: column;
+  gap: 30px;
 }
 .portfolio-list__item {
   list-style-type: none;
   color: #757575;
   font-size: 16px;
   line-height: 1.87;
-}
-.portfolio-list__subtitle {
-  color: #212121;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.portfolio-list__item {
+  width: 100%;
   border: 1px solid #eeeeee;
-  width: 370px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-list__item {
-  margin-bottom: 30px;
-  margin-right: 30px;
-}
-.portfolio-list__item:nth-last-child(-n+3) {
-  margin-bottom: 0px;
-}
-.portfolio-list__item:nth-child(3n) {
-  margin-right: 0px;
+@media screen and (min-width: 1200px) {
+  .portfolio-list__item {
+    width: calc((100% - 30px) / 3);
+  }
 }
 .portfolio-list__item:hover, .portfolio-list__item:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .portfolio-list__item:hover .portfolio-list__overlay {
   transform: translateY(0);
+}
+.portfolio-list__item__subtitle {
+  color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 .portfolio-list__tumb {
   position: relative;
