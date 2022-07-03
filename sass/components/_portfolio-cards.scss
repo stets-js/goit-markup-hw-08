@@ -3,6 +3,11 @@
     flex-direction: column;
     gap: 30px;
 
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
 
 &__item {
     list-style-type: none;
@@ -13,6 +18,10 @@ line-height: 1.87;
 width: 100%;
 border: 1px solid #eeeeee;
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+@media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
 
 @media screen and (min-width: 1200px) {
         width: calc((100% - 2 * 15px) / 3);
@@ -72,7 +81,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     top: 0;
     left: 0;
     background-color: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     
@@ -91,5 +100,11 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: 0.03em;
 
     color: #ffffff;
+}
+
+&__img {
+    display: block;
+    width: 100%;
+    // object-fit: cover;
 }
 }

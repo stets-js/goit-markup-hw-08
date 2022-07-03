@@ -1,5 +1,5 @@
 .clients__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: $black-title;
     font-weight: 700;
     font-size: 28px;
@@ -17,6 +17,10 @@
     align-items: center;
     padding: 0;
     margin: 0;
+
+    @media screen and (min-width: 768px) {
+        align-items: normal;
+    }
 }
 
 .clients__item {
@@ -25,12 +29,23 @@
 
 &:not(:nth-child(n+5)) {
     margin-bottom: 30px;
+    
+}
+    @media screen and (min-width: 768px) {
+        &:nth-last-child(-n+3) {
+        margin-bottom: 0;
+    }
 }
 
 &:hover,
 &:focus {
     color: $accent;
     border-color: $accent;
+}
+
+@media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+    
 }
 }
 

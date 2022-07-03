@@ -19,11 +19,12 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-}
-
-.modal{
+& .modal {
     transform: scale(2);
 }
+}
+
+
 .modal {
     position: absolute;
     top: 93px;

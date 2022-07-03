@@ -1,5 +1,10 @@
 .subscribe-form {
 display: block;
+
+@media screen and (min-width: 768px) {
+    padding-top: 60px;
+    text-align: center;
+}
 }
 
 .subscribe__title {
