@@ -5,9 +5,11 @@ body {
     letter-spacing: 0.03em;
     font-size: 14px;
 
-
 }
 
+.no-scroll {
+    overflow: hidden;
+}
 
 .container {
     width: 100%;
