@@ -18,6 +18,10 @@
         justify-content: space-around;
         align-items: stretch;
     }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+    }
 }
 
 .footer__logo {
@@ -28,10 +32,13 @@
     font-family: $secondary-font;
     font-weight: 700;
     font-size: 24px;
-    // font-size: 26px;
     line-height: 1.17;
-    // line-height: 1.19;
 
+    @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+    font-size: 26px;
+    line-height: 1.19;
+    }
 
 &--accent {
     color: $accent;

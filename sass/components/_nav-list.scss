@@ -4,7 +4,6 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    // margin-left: 93px;
     top: 100%;
     left: 0;
     width: 100%;
@@ -18,7 +17,12 @@
         gap: 50px;
     }
     
-    //     @media screen and (min-width: 1200px) 
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+        margin-left: 93px;
+        margin-right: 305px;
+        width: auto;
+    }
         
 &__link {
     position: relative;
@@ -57,7 +61,6 @@
             }
         }
         }
-        // @media screen and (min-width: 1200px) 
-        //     padding-top: 32px;
+        
 }
 }

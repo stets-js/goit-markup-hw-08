@@ -4,9 +4,12 @@
     font-weight: 700;
     font-size: 28px;
     line-height: 1.18;
-    // font-size: 36px;
-    // line-height: 1.17;
     text-align: center;
+
+    @media screen and (min-width: 1200px){
+    font-size: 36px;
+    line-height: 1.17;
+    }
 }
 
 .clients__list {
@@ -31,11 +34,6 @@
     margin-bottom: 30px;
     
 }
-    @media screen and (min-width: 768px) {
-        &:nth-last-child(-n+3) {
-        margin-bottom: 0;
-    }
-}
 
 &:hover,
 &:focus {
@@ -45,7 +43,16 @@
 
 @media screen and (min-width: 768px) {
     width: calc((100% - 60px) / 3);
+    &:nth-last-child(-n+3) {
+            margin-bottom: 0;
+    }
     
+}
+
+@media screen and (min-width: 1200px) {
+    width: 170px;
+    &:nth-child(n+1) {
+    margin-bottom: 0;}
 }
 }
 
