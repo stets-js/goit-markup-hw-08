@@ -26,10 +26,7 @@ ul {
 
 body {
   background-color: #ffffff;
-  color: #757575;
   font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
-  font-size: 14px;
 }
 
 .no-scroll {
@@ -707,6 +704,10 @@ body {
   }
 }
 
+.benefits__text {
+  color: #757575;
+}
+
 .activity {
   padding-top: 0;
   display: none;
@@ -833,6 +834,9 @@ body {
 .team__description {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.team__position {
+  color: #757575;
 }
 
 .social {
@@ -973,6 +977,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__tumb {
     justify-content: flex-start;
+    flex-wrap: nowrap;
   }
 }
 
@@ -1109,7 +1114,6 @@ body {
 .subscribe__title {
   display: block;
   text-align: center;
-  width: 100%;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1225,6 +1229,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  list-style-type: none;
 }
 @media screen and (min-width: 768px) {
   .portfolio-list {
@@ -1233,9 +1238,6 @@ body {
   }
 }
 .portfolio-list__item {
-  list-style-type: none;
-  font-size: 16px;
-  line-height: 1.87;
   width: 100%;
   border: 1px solid #eeeeee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1296,4 +1298,11 @@ body {
 .portfolio-list__img {
   display: block;
   width: 100%;
+}
+.portfolio-list__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: #757575;
 }/*# sourceMappingURL=main.css.map */
