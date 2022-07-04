@@ -1083,31 +1083,36 @@ body {
 }
 @media screen and (min-width: 768px) {
   .subscribe-form {
-    padding-top: 60px;
     text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .subscribe-form {
-    padding-top: 12px;
+    display: flex;
     margin-left: 93px;
-    text-align: left;
+    align-items: flex-start;
   }
 }
 
 .subscribe__title {
-  display: inline-block;
+  display: block;
   text-align: center;
   width: 100%;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .subscribe__title {
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscribe__title {
-    display: block;
+    margin-top: 12px;
+    margin-left: 93px;
     text-align: left;
   }
 }
@@ -1130,7 +1135,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .subscribe-form__input {
-    display: inline;
+    display: flex;
     width: 358px;
   }
 }
@@ -1158,7 +1163,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .subscribe-form__btn {
-    margin: 0;
+    margin: 20px auto 0px 12px;
   }
 }
 
