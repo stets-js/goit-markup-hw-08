@@ -10,6 +10,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
+    letter-spacing: 0.03em;
     text-align: center;
     color: $black-title;
 }
@@ -96,9 +97,12 @@
 }
 
 .form__field-checkbox {
-    // padding-left: 14px;
     margin-top: 20px;
     margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+    padding-left: 14px;
+    }
 }
 
 .form__icon-checkbox {
@@ -129,9 +133,13 @@
     align-items: center;
     font-size: 12px;
     line-height: 1.17;
-    // font-size: 14px;
-    // line-height: 1.71;
+    letter-spacing: 0.03em;
     color: $main-text;
+
+    @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    }
 }
 
 .form__policy-link {

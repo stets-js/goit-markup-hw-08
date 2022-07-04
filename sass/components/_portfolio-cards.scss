@@ -4,6 +4,14 @@
     gap: 30px;
     list-style-type: none;
 
+&__subtitle {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 2;
+            letter-spacing: 0.06em;
+            color: $black-title;
+        }
+
     @media screen and (min-width: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
@@ -36,13 +44,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
             transform: translateY(0);
     }
 
-&__subtitle {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: $black-title;
-}
+
 }
 
 
@@ -89,6 +91,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
     
 }
+
 &__text {
     font-weight: 400;
     font-size: 16px;
