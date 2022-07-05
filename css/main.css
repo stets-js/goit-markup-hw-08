@@ -358,12 +358,11 @@ body {
 }
 
 .hero {
-  width: 480px;
+  max-width: 480px;
   height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero480.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -374,25 +373,27 @@ body {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero480@2x.jpg");
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    width: 768px;
+    max-width: 768px;
     background-size: 768px 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero768.jpg");
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero768@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-size: 1600px 600px;
+  }
+  .hero .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero1600.jpg");
   }
 }
@@ -704,6 +705,16 @@ body {
   font-size: 14px;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .benefits__subtitle {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__subtitle {
+    text-align: left;
+  }
+}
 
 .benefits__list {
   display: flex;
@@ -731,14 +742,17 @@ body {
   .benefits__item {
     width: calc((100% - 30px) / 2);
   }
-  .benefits__item:last-child {
-    margin-bottom: 30px;
+  .benefits__item:nth-child(n+3) {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .benefits__item {
     width: 270px;
     gap: 30px;
+  }
+  .benefits__item:nth-child(1), .benefits__item:nth-child(2) {
+    margin-bottom: 0;
   }
 }
 
@@ -920,6 +934,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
   }
@@ -1234,11 +1249,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   row-gap: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .btn-list {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-list {
+    margin-bottom: 50px;
   }
 }
 .btn-list__item {
